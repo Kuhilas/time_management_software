@@ -1,0 +1,9 @@
+Consultant Daily Report (28-01-2025)
+==============================
+Consultant: Bob Builder, Customer: YIT, Total Hours: 8.00
+Consultant: Kimmo Konsultti, Customer: Pertin Peruna Oy, Total Hours: 16.00
+
+Consultant Weekly Report (21-01-2025 - 28-01-2025)
+==============================
+Consultant: Kimmo Konsultti, Customer: Pertin Peruna Oy, Total Hours: 16.00
+Consultant: Bob Builder, Customer: YIT, Total Hours: 8.00
