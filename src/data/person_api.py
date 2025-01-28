@@ -1,4 +1,5 @@
 from flask import Flask, request
+from person_service import *
 
 
 app = Flask(__name__)
@@ -23,9 +24,15 @@ def insert_worktime():
     except:
         return {"error": "error creating worktime booking"}
 
+@app.route('/worktime', methods=['GET'])
+def get_all_person():
+    try:  
+        return db_get_persons()
+    except:
+        return {"error": "no data"}
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True)
 
 
 

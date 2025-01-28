@@ -11,7 +11,7 @@ def db_get_persons():
     try:
         con = psycopg2.connect(**config())
         cursor = con.cursor(cursor_factory=RealDictCursor)
-        SQL = 'SELECT * FROM person;'
+        SQL = 'SELECT * FROM worktime;'
         cursor.execute(SQL)
         data = cursor.fetchall()
         cursor.close()
@@ -185,7 +185,7 @@ def db_delete_person(id):
         if con is not None:
             con.close()
 
-if __name__ == '__main__':
+#if __name__ == '__main__':
     #print(db_create_person("John"))
     #print(db_update_person(5, "John"))  
     #print(db_delete_person(5))      
