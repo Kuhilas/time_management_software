@@ -32,7 +32,7 @@ def fetch_and_write_report():
     
     try:
         con = psycopg2.connect(**config())
-        cursor = con.cursor(cursor_factory=RealDictCursor)
+        cursor = con.cursor(cursor_factory=RealDictCursor) # RealDictCursor converts column names to lowercase by default when returning the result
         
         # Fetch and store daily data
         cursor.execute(daily_sql_query)
