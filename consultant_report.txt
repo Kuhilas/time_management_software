@@ -1,4 +1,0 @@
-Consultant Report
-==============================
-Consultant: Bob Builder, Customer: YIT, Total Hours: 7.50
-Consultant: Kimmo Konsultti, Customer: Pertin Peruna Oy, Total Hours: 8.00
