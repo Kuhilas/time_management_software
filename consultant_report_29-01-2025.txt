@@ -7,6 +7,16 @@ Consultant: Tarja Tarpoja, Customer: Villilänsi Ry, Total Hours: 8.00
 
 Consultant Weekly Report (22-01-2025 - 29-01-2025)
 ======================================================
+Consultant: Peter Python
+  2025-01-29: 9.00 hours
+  2025-01-28: 0.00 hours
+  2025-01-27: 8.00 hours
+  2025-01-26: 0.00 hours
+  2025-01-25: 0.00 hours
+  2025-01-24: 7.00 hours
+  2025-01-23: 0.00 hours
+Total hours for the week: 24.00
+
 Consultant: Kimmo Konsultti
   2025-01-29: 7.00 hours
   2025-01-28: 16.00 hours
@@ -26,16 +36,6 @@ Consultant: Tarja Tarpoja
   2025-01-24: 0.00 hours
   2025-01-23: 0.00 hours
 Total hours for the week: 16.00
-
-Consultant: Peter Python
-  2025-01-29: 9.00 hours
-  2025-01-28: 0.00 hours
-  2025-01-27: 8.00 hours
-  2025-01-26: 0.00 hours
-  2025-01-25: 0.00 hours
-  2025-01-24: 7.00 hours
-  2025-01-23: 0.00 hours
-Total hours for the week: 24.00
 
 
 Cumulative Working Hours Grouped by Customer
