@@ -1,0 +1,61 @@
+Consultant Daily Report (29-01-2025)
+======================================================
+Consultant: Kimmo Konsultti, Customer: Pertin Peruna Oy, Total Hours: 7.00
+Consultant: Peter Python, Customer: Kovat Koodarit Oy, Total Hours: 9.00
+Consultant: Tarja Tarpoja, Customer: Villilänsi Ry, Total Hours: 8.00
+
+
+Consultant Weekly Report (22-01-2025 - 29-01-2025)
+======================================================
+Consultant: Kimmo Konsultti
+  2025-01-29: 7.00 hours
+  2025-01-28: 16.00 hours
+  2025-01-27: 0.00 hours
+  2025-01-26: 0.00 hours
+  2025-01-25: 0.00 hours
+  2025-01-24: 0.00 hours
+  2025-01-23: 0.00 hours
+Total hours for the week: 23.00
+
+Consultant: Tarja Tarpoja
+  2025-01-29: 8.00 hours
+  2025-01-28: 8.00 hours
+  2025-01-27: 0.00 hours
+  2025-01-26: 0.00 hours
+  2025-01-25: 0.00 hours
+  2025-01-24: 0.00 hours
+  2025-01-23: 0.00 hours
+Total hours for the week: 16.00
+
+Consultant: Peter Python
+  2025-01-29: 9.00 hours
+  2025-01-28: 0.00 hours
+  2025-01-27: 8.00 hours
+  2025-01-26: 0.00 hours
+  2025-01-25: 0.00 hours
+  2025-01-24: 7.00 hours
+  2025-01-23: 0.00 hours
+Total hours for the week: 24.00
+
+
+Cumulative Working Hours Grouped by Customer
+======================================================
+Customer: Kovat Koodarit Oy, Total Hours: 24.00
+Customer: Villilänsi Ry, Total Hours: 16.00
+Customer: Pertin Peruna Oy, Total Hours: 86.00
+
+Average Working Hours For Each Day For Each Consultant
+======================================================
+Consultant: Kimmo Konsultti
+  2025-01-28: 8.00 hours
+  2025-01-29: 7.00 hours
+
+Consultant: Peter Python
+  2025-01-24: 7.00 hours
+  2025-01-27: 8.00 hours
+  2025-01-29: 9.00 hours
+
+Consultant: Tarja Tarpoja
+  2025-01-28: 8.00 hours
+  2025-01-29: 8.00 hours
+
