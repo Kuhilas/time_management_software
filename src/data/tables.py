@@ -29,10 +29,11 @@ def create_table():
 
         # Define SQL command to create the 'cumulative' table with consultantName as foreign key
         create_cumulative_table = """
+        DROP TABLE IF EXISTS cumulative;
         CREATE TABLE IF NOT EXISTS cumulative (
             ID SERIAL PRIMARY KEY,
-            consultantName VARCHAR(255),
-            totalHours INT
+            consultantName VARCHAR(255) UNIQUE,
+            totalHours DECIMAL(5, 1) DEFAULT 0.0
         );
         """
 
