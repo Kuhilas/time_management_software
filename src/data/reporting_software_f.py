@@ -6,7 +6,7 @@ from azure.identity import DefaultAzureCredential
 from azure.storage.blob import BlobServiceClient, BlobClient
 from datetime import datetime, timedelta
 
-# Fetch daily and weekly report data from the database using Azure CLI (remember to activate venv .\venv\Scripts\activate)
+# Fetch daily and weekly report data from the database
 def fetch_and_write_report():
     con = None
     daily_data = []
