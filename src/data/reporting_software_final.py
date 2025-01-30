@@ -1,6 +1,6 @@
 import psycopg2
 from psycopg2.extras import RealDictCursor
-from config import config
+from config import config, storage_config
 from azure.storage.blob import BlobServiceClient
 from datetime import datetime, timedelta
 
@@ -53,7 +53,7 @@ def fetch_and_write_report():
 
     try:
         # Load configuration for both database and storage
-        db_config, storage_config = config()
+        db_config = config()
 
         # Connect to the database
         con = psycopg2.connect(**db_config)
@@ -146,14 +146,14 @@ def fetch_and_write_report():
     return report_filename
 
 def upload_to_blob(file_path):
-    db_config, storage_config = config()
+    storage_configuration = storage_config()
 
     blob_service_client = BlobServiceClient(
-        account_url=storage_config['storage_account_url'],
-        credential=storage_config['storage_account_key']
+        account_url=storage_configuration['storage_account_url'],
+        credential=storage_configuration['storage_account_key']
     )
 
-    blob_client = blob_service_client.get_blob_client(container=storage_config['storage_container_name'], blob=file_path)
+    blob_client = blob_service_client.get_blob_client(container=storage_configuration['storage_container_name'], blob=file_path)
 
     with open(file_path, "rb") as data:
         blob_client.upload_blob(data, overwrite=True)
