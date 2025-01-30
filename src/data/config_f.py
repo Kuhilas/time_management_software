@@ -29,6 +29,26 @@ def config(filename='src\\data\\database.ini', section='keyvault'):
             'sslmode': 'require',
         }
 
+        return db_config
+    else:
+        raise Exception(f"Section {section} not found in the {filename} file")
+    
+def storage_config(filename='src\\data\\database.ini', section='keyvault'):
+    parser = ConfigParser()
+    
+    if not os.path.exists(filename):
+        raise Exception(f"Configuration file not found at {filename}")
+
+    parser.read(filename)
+
+    if parser.has_section(section):
+        params = parser[section]
+        keyvault_url = params['vault_url']
+
+        # Authenticate using Managed Identity
+        credential = DefaultAzureCredential()
+        client = SecretClient(vault_url=keyvault_url, credential=credential)
+
         # Fetch storage account details
         storage_config = {
             'storage_account_url': client.get_secret("STORAGE-ACCOUNT-URL").value,
@@ -36,6 +56,6 @@ def config(filename='src\\data\\database.ini', section='keyvault'):
             'storage_account_key': client.get_secret("STORAGE-ACCOUNT-KEY").value,
         }
 
-        return db_config, storage_config
+        return storage_config
     else:
         raise Exception(f"Section {section} not found in the {filename} file")
